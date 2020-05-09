@@ -1,5 +1,7 @@
 FROM php:7.4-fpm
 
+COPY get-composer /usr/local/bin/get-composer
+
 RUN apt-get update && \
 apt-get install -y --no-install-recommends \
 git \
