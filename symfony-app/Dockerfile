@@ -7,4 +7,6 @@ apt-get install -y --no-install-recommends \
 git \
 wget && \
 wget https://get.symfony.com/cli/installer -O - | bash && \
-ln -s /root/.symfony/bin/symfony /usr/local/bin/symfony
+ln -s /root/.symfony/bin/symfony /usr/local/bin/symfony && \
+get-composer && \
+mv composer.phar /usr/local/bin/composer
