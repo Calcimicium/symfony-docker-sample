@@ -1,5 +1,7 @@
 FROM php:7.4-fpm
 
+ADD https://raw.githubusercontent.com/mlocati/docker-php-extension-installer/master/install-php-extensions /usr/local/bin/
+
 COPY get-composer /usr/local/bin/get-composer
 
 RUN cp $PHP_INI_DIR/php.ini-development $PHP_INI_DIR/php.ini && \
