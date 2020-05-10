@@ -3,4 +3,5 @@ version: '3.7'
 services:
   symfony:
     build: symfony-app
+    container_name: ${SERVICE_SYMFONY_CONTAINER:-symfony-app}
     image: ${SERVICE_SYMFONY_IMAGE:-symfony-app}
