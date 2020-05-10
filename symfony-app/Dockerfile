@@ -2,7 +2,8 @@ FROM php:7.4-fpm
 
 COPY get-composer /usr/local/bin/get-composer
 
-RUN apt-get update && \
+RUN cp $PHP_INI_DIR/php.ini-development $PHP_INI_DIR/php.ini && \
+apt-get update && \
 apt-get install -y --no-install-recommends \
 git \
 wget && \
