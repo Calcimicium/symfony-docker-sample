@@ -3,3 +3,4 @@ version: '3.7'
 services:
   symfony:
     build: symfony-app
+    image: ${SERVICE_SYMFONY_IMAGE:-symfony-app}
