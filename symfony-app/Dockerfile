@@ -12,4 +12,6 @@ wget && \
 wget https://get.symfony.com/cli/installer -O - | bash && \
 ln -s /root/.symfony/bin/symfony /usr/local/bin/symfony && \
 get-composer && \
-mv composer.phar /usr/local/bin/composer
+mv composer.phar /usr/local/bin/composer && \
+chmod +x /usr/local/bin/install-php-extensions && \
+install-php-extensions intl opcache xdebug
