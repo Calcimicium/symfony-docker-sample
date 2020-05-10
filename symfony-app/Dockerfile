@@ -15,3 +15,5 @@ get-composer && \
 mv composer.phar /usr/local/bin/composer && \
 chmod +x /usr/local/bin/install-php-extensions && \
 install-php-extensions intl opcache xdebug
+
+VOLUME /var/www/html
