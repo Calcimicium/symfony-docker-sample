@@ -17,3 +17,4 @@ chmod +x /usr/local/bin/install-php-extensions && \
 install-php-extensions intl opcache xdebug
 
 VOLUME /var/www/html
+EXPOSE 8000
